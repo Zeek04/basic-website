@@ -1,68 +1,142 @@
 /*Homepage Css*/
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2e5077;
 }
 
-.nav-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    background-color: #213555;
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: #213555;
 }
 
-#logo{
-    max-width: 150px;
-    height: auto;
+#logo {
+  max-width: 150px;
+  height: auto;
 }
 
-.page-link{
-    color: #f5efe7;
-    list-style: none;
-    display: inline-flex;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+.page-link {
+  color: #f5efe7;
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
-.page-link a{
-    color: #f5efe7;
-    text-decoration: none;
-    font-size: 25px;
-    margin: 0 15px;
-    padding: 5px 10px;
-    font-weight: 600;
+.page-link a {
+  color: #f5efe7;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 0 15px;
+  padding: 5px 10px;
+  font-weight: 600;
+  margin-right: 30px;
 }
 
-.page-link a:hover{
-    color: #d8c4b6;
-    text-decoration: underline;
-    transition: color 0.3s ease;
+.page-link a:hover {
+  color: #d8c4b6;
+  text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .page-link a.active {
-    color: #2e5077;
-    font-weight: bold;
+  color: #2e5077;
+  font-weight: bold;
 }
 
-.header-image{
-    /*Place Holder Image*/
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/headerimage.png) center/cover no-repeat;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffff;
+.header-image {
+  /*Place Holder Image*/
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/headerimage.png) center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
 }
 
-.page-header h1{
-    font-size: 65px;
+.page-header h1 {
+  font-size: 65px;
 }
 
-.page-header p{
-    font-size: 35px;
+.page-header p {
+  font-size: 35px;
+  text-align: center;
+  margin-top: -40px;
+}
+
+.skills {
+  text-align: center;
+  margin: 50px 0;
+}
+
+#sub-heading {
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-left: 5rem;
+  color: #fff;
+  text-align: start;
+  font-weight: bold;
+}
+
+#skill-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+#skill-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-box {
+  text-align: center;
+  background-color: #213555;
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-box i {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.skill-box p {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 30px 0 30px;
+  color: #fff;
+}
+
+.fa-html5 {
+  color: #f06529;
+}
+
+.fa-js {
+  color: #f7df1e;
+}
+
+.fa-css3-alt {
+  color: #2965f1;
 }
