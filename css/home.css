@@ -1,13 +1,18 @@
+/*Homepage Css*/
+
 body{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-bar{
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    te
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background-color: #213555;
 }
 
 #logo{
@@ -16,5 +21,48 @@ body{
 }
 
 .page-link{
+    color: #f5efe7;
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
 
+.page-link a{
+    color: #f5efe7;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 15px;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.page-link a:hover{
+    color: #d8c4b6;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.page-link a.active {
+    color: #2e5077;
+    font-weight: bold;
+}
+
+.header-image{
+    /*Place Holder Image*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/headerimage.png) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+}
+
+.page-header h1{
+    font-size: 65px;
+}
+
+.page-header p{
+    font-size: 35px;
 }
