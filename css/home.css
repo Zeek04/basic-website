@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  color: #fff;
+}
+.container {
+  padding: 10px 10%;
+}
+/*Landing page*/
+nav {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#logo {
+  width: 250px;
+  margin: -55px 40px;
+  height: 100%;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 30px 40px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #339988;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover {
+  color: #44ccaa;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+#img-me {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: 0; /* This will position the image at the right edge of the page */
+  z-index: -1;
+}
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h1 span {
+  color: #44ccaa;
+}
+.header-text p {
+  margin-top: 10px;
+}
+.header-text p strong {
+  color: #44ccaa;
+}
+.header-text p span {
+  text-decoration: underline #33ccbb;
+}
+#reach-me {
+  width: 150px;
+  height: 50px;
+  background-color: #339988;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#reach-me:hover {
+  background-color: #44ccaa;
+}
+#reach-me a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+}
+/*Service*/
+#services {
+  padding: 30px 0px;
+}
+.subTitle {
+  margin-top: 300px;
+  font-size: 45px;
+  color: #44ccaa;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.services-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 19px;
+  transition: background 0.5s, transform 0.5s;
+}
+.services-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.services-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.services-list div:hover {
+  background: #339988;
+  transform: translateY(-10px);
+}
+/*--MyWork--*/
+#work {
+  padding: 50px, 0;
+}
+#Work div h1 {
+  margin-top: 30px;
+}
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.project {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #339988);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0, 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 20px;
+  color: #339988;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+.project:hover img {
+  transform: scale(1.1);
+}
+.project:hover .layer {
+  height: 100%;
+}
+/*--Contact Me--*/
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-left {
+  flex-basis: 30%;
+}
+.contact-right {
+  flex-basis: 60%;
+  margin-top: 300px;
+}
+.contact-left p {
+  margin-top: 30px;
+}
+.contact-left p i {
+  color: #44ccaa;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 30px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: #44ccaa;
+  transform: translateY(-5px);
+}
+.btn2 {
+  width: 150px;
+  height: 50px;
+  background-color: #339988;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  display: inline-block;
+}
+.btn2:hover {
+  background-color: #44ccaa;
+}
+.contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+nav .fa-solid {
+  display: none;
+}
+
+@media screen and (max-width: 790px) {
+  /* Reduce the logo size and adjust margins for smaller screens */
+  #logo {
+    width: 100px;
+    margin: -25px 10px;
+  }
+
+  /* Change navigation to a stacked layout for smaller screens */
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /* Adjust font size and spacing for header text */
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header-text h1 {
+    font-size: 30px;
+  }
+  .header-text p strong {
+    color: #44ccaa;
+  }
+  #img-me {
+    width: 90%; /* Adjust the image width as needed */
+    max-width: none; /* Allow the image to expand to its natural size */
+    display: block; /* Remove any previous positioning */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  /* "Reach Me" button styles for smaller screens */
+  #reach-me {
+    width: 125px;
+  }
+
+  /* Adjust margins for service list items */
+  .services-list div {
+    margin-bottom: 10px;
+  }
+
+  /* Change "My Work" section title margin for smaller screens */
+  #Work div h1 {
+    margin-top: 10px;
+  }
+
+  /* Make project images responsive within their containers */
+  .project img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Contact section layout for smaller screens */
+  .contact-container {
+    flex-direction: column;
+  }
+
+  /* Adjust width for contact-left and contact-right */
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+  .contact-left {
+    margin-top: -40px;
+  }
+  .contact-right {
+    flex-basis: 60%;
+    margin-top: 50px;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #339988;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 30px;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  #msg {
+    font-size: 18px;
+  }
+}
+#msg {
+  color: #61b752;
+  margin-top: 10px;
+  display: block;
+  font-size: 25px;
+}
