@@ -240,7 +240,7 @@ nav ul li a:hover::after {
   line-height: 50px; /* Vertically aligns text within the button */
 }
 
-#show-more:hover{
+#show-more:hover {
   background-color: #44ccaa;
   transform: translateY(-3px);
 }
