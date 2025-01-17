@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/img/Blue.png" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/3ce7561ef0.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    
+    <!--Nav Bar-->
+    <div id="header">
+        <nav>
+          <img src="/img/Blue.png" alt="logo" id="logo" />
+          <ul id="navbar">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="https://dev.to/zeek04" target="_blank">Blog</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact Me</a></li>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+
+          <!--Copyright/ Contact me-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-container">
+            <div class="contact-left">
+              <h1 class="subTitle">Contact Me</h1>
+              <p>
+                <i class="fa-solid fa-envelope"></i>cruzezequiel81@gmail.com
+              </p>
+              <p><i class="fa-solid fa-phone"></i>717-383-6163</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61552670243306"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/ezequiel-cruz-collazo-a07171272/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/Zeek04"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your  Message"
+                ></textarea>
+                <button type="submit" class="btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright @ Ezequiel's Portfolio. Made by Ezequiel Cruz</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
