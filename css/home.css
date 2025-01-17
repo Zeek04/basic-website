@@ -91,6 +91,7 @@ nav ul li a:hover::after {
 }
 #reach-me:hover {
   background-color: #44ccaa;
+  transform: translateY(-3px);
 }
 #reach-me a {
   color: #fff;
@@ -208,23 +209,37 @@ nav ul li a:hover::after {
   height: 100%;
 }
 
-#show-more{
+#show-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set height to fill the parent container */
+  margin-top: 30px;
+}
+
+#show-more {
   width: 150px;
   height: 50px;
   background-color: #339988;
   border-radius: 5px;
   border: none;
-  margin-top: 20px;
   cursor: pointer;
   text-align: center;
 }
 
-#show-more a{
+#show-more a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
-  text-align: center;
+  display: inline-block;
+  line-height: 50px; /* Vertically aligns text within the button */
 }
+
+#show-more:hover{
+  background-color: #44ccaa;
+  transform: translateY(-3px);
+}
+
 /*--Contact Me--*/
 .contact-container {
   display: flex;
@@ -276,6 +291,7 @@ nav ul li a:hover::after {
 }
 .btn2:hover {
   background-color: #44ccaa;
+  transform: translateY(-3px);
 }
 .contact-right form {
   width: 100%;
